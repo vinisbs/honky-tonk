@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    
+      <script> 
+
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBMywlWS_9iafFrGaLLRZwXo4rKpYezyAk",
+          authDomain: "honkytonk-2.firebaseapp.com",
+          projectId: "honkytonk-2",
+          storageBucket: "honkytonk-2.appspot.com",
+          messagingSenderId: "755868257605",
+          appId: "1:755868257605:web:2052c6ff1d02aeefd5822c"
+        };
+      
+      // Initialize Firebase
+
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const database = firebase.database();
+
+  auth.signOut()
+                .then(() => {
+                    // Delete Firebase-related cookies
+                    document.cookie = "_appname_session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                    document.cookie = "_appname_session.sig=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                    // Redirect or display a message after successful logout
+                    console.log('User logged out and cookies deleted');
+                    window.location.href = "index.html";
+                })
+                .catch(error => {
+                    console.error('Logout error:', error);
+                });
+
+</script>
+    
+</body>
+</html>
