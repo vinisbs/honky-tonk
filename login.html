@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="styles/loginstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="signupSection">
+        <div class="info">
+            <img src="resources/cdb036ac-94bb-4a85-8270-1396fb5c2ca7.png" id="logo" width="150px" style="width: 144px;margin: 1%;">
+<br>
+          <h3>Death is like a restaurant bill </h3>
+         
+          <p>It's inevitable</p>
+
+          <p id="hide" style="color: red;">And here you can pay for it</p>
+        </div>
+        <div style="width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;">
+          <h2>Sign Up</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="username" name="username" placeholder="Email" value=""  required/>
+            </li>
+            <li>
+              <label for="password"></label>
+              <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" required/>
+            </li>
+            <li id="center-btn">
+              <input type="submit" id="join-btn" name="join" alt="Join" onclick="login()" value="Login">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      
+          
+            <script>
+      
+              // Your web app's Firebase configuration
+              const firebaseConfig = {
+                apiKey: "AIzaSyBMywlWS_9iafFrGaLLRZwXo4rKpYezyAk",
+                authDomain: "honkytonk-2.firebaseapp.com",
+                projectId: "honkytonk-2",
+                storageBucket: "honkytonk-2.appspot.com",
+                messagingSenderId: "755868257605",
+                appId: "1:755868257605:web:2052c6ff1d02aeefd5822c"
+              };
+            
+            // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const database = firebase.database();
+       
+      
+        // Use onAuthStateChanged from auth object
+        auth.onAuthStateChanged(user => {
+          if (user) {
+            const uid = user.email;
+            console.log("user : " + uid);
+          }
+        });
+      
+      
+      
+      </script>
+
+<script src="script.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script>
+          $(document).ready(function() {
+            $("#hide").hide();
+    // Quando o mouse passar sobre a imagem com o ID "logo"
+    $("#logo").mouseenter(function() {
+      // Exibir o parágrafo com o ID "hide"
+      $("#hide").show();
+    });
+
+
+    $("#join-btn").mouseenter(function() {
+      // Exibir o parágrafo com o ID "hide"
+      $("#hide").show();
+    });
+    $("#join-btn").mouseleave(function() {
+      // Ocultar o parágrafo com o ID "hide"
+      $("#hide").hide();
+    });
+
+    // Quando o mouse sair da imagem com o ID "logo"
+    $("#logo").mouseleave(function() {
+      // Ocultar o parágrafo com o ID "hide"
+      $("#hide").hide();
+    });
+  });
+      </script>
+</body>
+</html>

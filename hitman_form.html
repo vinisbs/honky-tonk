@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="success_button.css">
+
+    <title>Assassin Assignment Form</title>
+</head>
+
+<body style="background-color: #b5b5b5;">
+    <div class="container mt-5">
+        <h2>Hitman Assignment Form</h2>
+        <form id="hitmanForm">
+            <div class="form-group">
+                <label for="hitman">Hitman:</label>
+                <select class="form-control" id="hitman" name="hitman">
+                    <option value="hitman1">Voda</option>
+                    <option value="hitman2">Souless Chef</option>
+                    <option value="hitman3">El Melocotón</option>
+                    <option value="hitman4">Sushi Raw</option>
+                    <option value="hitman5">ProSoulKiller</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weapon">Weapon of Choice:</label>
+                <input type="text" class="form-control" id="weapon" name="weapon">
+            </div>
+            <div class="form-group">
+                <label for="targetLocation">Target Location:</label>
+                <input type="text" class="form-control" id="targetLocation" name="targetLocation">
+                
+            </div>
+            <div class="form-group">
+                <label for="deathProof">Death Proof:</label>
+                <select class="form-control" id="deathProof" name="deathProof">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group" id="proofDetailsContainer" style="display: none;">
+                <label for="proofDetails">Proof Details:</label>
+                <textarea class="form-control" id="proofDetails" name="proofDetails" disabled></textarea>
+            </div>
+            <div class="form-group" id="liveProofContainer" style="display: none;">
+                <label for="liveProof">Live Proof:</label>
+                <select class="form-control" id="liveProof" name="liveProof">
+                    <option value="photo">Photo</option>
+                    <option value="live">Live ($200 additional, shipping ports free for orders above $500)</option>
+                </select>
+            <div class="form-group" id="dropSpotContainer" style="display: none;">
+                    <label for="dropSpot">Drop Spot:</label>
+                    <input type="text" class="form-control" id="dropSpot" name="dropSpot">
+            </div>
+            </div>
+            <a class="btn-slice" type="submit" href="success.html">
+                <div class="top"><span>Dead Soon</span></div>
+                <div class="bottom"><span>Dead Soon</span></div>
+              </a>
+        </form>
+    </div>
+    <!-- Other fields... -->
+
+
+
+    
+
+
+
+    <script src="hitman_form.js"></script> 
+</body>
+</html>

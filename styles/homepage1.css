@@ -1,0 +1,115 @@
+/* Reset and General Styles */
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML */
+html {
+    overflow: scroll;
+}
+
+body {
+    background-color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+}
+
+ul.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+ul.navbar-menu li {
+    margin: 0 10px;
+}
+
+ul.navbar-menu li a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s, letter-spacing 0.3s;
+}
+
+ul.navbar-menu li:hover a {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  position: relative; /* Add positioning */
+  z-index: -1; /* Place the background behind the content */
+  height: 100vh;
+}
+
+/* Media Scroller */
+.picture-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center; /* Center vertically within the viewport */
+    justify-content: center; /* Center horizontally within the viewport */
+    position: absolute; /* Position absolutely within the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.picture-container img {
+    flex: 0 0 auto;
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.moving-picture-Euclides
+.moving-picture-Pedro
+.moving-picture-Simao
+.moving-picture-Soeiro
+.moving-picture-Vinicius
+{
+    width: 200px;
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.media-scroller {
+  animation: scroll 10s linear infinite;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+}
