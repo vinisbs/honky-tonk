@@ -35,13 +35,13 @@ Javascript, HTML, CSS, Bootstrap and Firebase were used as database.
 
 ## About
 
-In an alternative world, governed by the rules of the works of director Quentin Tarantino, Tte company Honky Tonk operates worldwide in the area of ​​bars and restaurants, but it is a fake company, for a terrible and Machiavellian platform for murders on demand operated by maniacs and psychopaths.
+In an alternative world, governed by the rules of the works of director Quentin Tarantino, The company Honky Tonk operates worldwide in the area of ​​bars and restaurants, but it is a fake company, for a terrible and Machiavellian platform for murders on demand operated by maniacs and psychopaths.
 
 ## Roadmap
-- Introduce new specialties.
-- pricing mechanism.
-- Improve purchase form.
-- Include chat with autobot
+- Introduce new specialties;
+- Pricing mechanism;
+- Improve purchase form;
+- Include chat with autobot.
 
 
 ## License
