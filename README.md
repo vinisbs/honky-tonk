@@ -1,11 +1,13 @@
-## Hanky Tonk
+## Hanky Tonk.
+
 Website created in 24 hours at the Academia de Código Hackthon #bootcamp88.
 
 ## Description
+
 Project created with the theme in the work of Quentin Tarantino in the film Death Proof (2007) and its theme song "Down in Mexico".
 Javascript, HTML, CSS, Bootstrap and Firebase were used as database.
 
-## Presentation
+## Presentation.
 
 <table>
   <tr>
@@ -22,7 +24,7 @@ Javascript, HTML, CSS, Bootstrap and Firebase were used as database.
   </tr>
 </table>
 
-## Snapshot
+## Snapshot.
 
 <table>
   <tr>
@@ -33,11 +35,12 @@ Javascript, HTML, CSS, Bootstrap and Firebase were used as database.
 </table>
 
 
-## About
+## About.
 
 In an alternative world, governed by the rules of the works of director Quentin Tarantino, The company Honky Tonk operates worldwide in the area of ​​bars and restaurants, but it is a fake company, for a terrible and Machiavellian platform for murders on demand operated by maniacs and psychopaths.
 
-## Roadmap
+## Roadmap.
+
 - Introduce new specialties;
 - Pricing mechanism;
 - Improve purchase form;
